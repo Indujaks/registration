@@ -1,0 +1,13 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
+
+package com.example.induja.registration;
+
+public final class R$menu {
+    public static final int menu_main = 2131230720;
+
+    public R$menu() {
+    }
+}

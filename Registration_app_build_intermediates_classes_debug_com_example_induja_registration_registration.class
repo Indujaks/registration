@@ -1,0 +1,23 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
+
+package com.example.induja.registration;
+
+import android.app.Application;
+import com.parse.Parse;
+
+public class registration extends Application {
+    public static final String YOUR_APPLICATION_ID = "bA2jSzNoYuZ5XOdcXzpC8LUhFoOLZvIXiRUlGS4Y";
+    public static final String YOUR_CLIENT_KEY = "SUgwli06qEgpFmQob5d56eFZsisbhSyMtdjDiGCD";
+
+    public registration() {
+    }
+
+    public void onCreate() {
+        super.onCreate();
+        Parse.enableLocalDatastore(this);
+        Parse.initialize(this, "bA2jSzNoYuZ5XOdcXzpC8LUhFoOLZvIXiRUlGS4Y", "SUgwli06qEgpFmQob5d56eFZsisbhSyMtdjDiGCD");
+    }
+}

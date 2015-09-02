@@ -1,0 +1,63 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
+
+package com.example.induja.registration;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+import com.parse.ParseObject;
+
+public class MainActivity extends Activity {
+    public MainActivity() {
+    }
+
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        this.setContentView(2130968576);
+        final EditText name = (EditText)this.findViewById(2131296257);
+        final EditText cname = (EditText)this.findViewById(2131296258);
+        final EditText bname = (EditText)this.findViewById(2131296259);
+        final EditText email = (EditText)this.findViewById(2131296260);
+        final EditText ename = (EditText)this.findViewById(2131296261);
+        final EditText num = (EditText)this.findViewById(2131296262);
+        Button btn1 = (Button)this.findViewById(2131296256);
+        btn1.setOnClickListener(new OnClickListener() {
+            public void onClick(View view) {
+                String name1 = name.getEditableText().toString();
+                String name2 = cname.getEditableText().toString();
+                String name3 = bname.getEditableText().toString();
+                String name4 = email.getEditableText().toString();
+                String name5 = ename.getEditableText().toString();
+                String name6 = num.getEditableText().toString();
+                ParseObject gameScore = new ParseObject("reg");
+                gameScore.put("name", name1);
+                gameScore.put("college", name2);
+                gameScore.put("branch", name3);
+                gameScore.put("email", name4);
+                gameScore.put("event_name", name5);
+                gameScore.put("phone", name6);
+                gameScore.saveInBackground();
+                Toast.makeText(MainActivity.this.getApplicationContext(), "REGISTERED", 0).show();
+            }
+        });
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        this.getMenuInflater().inflate(2131230720, menu);
+        return true;
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        return id == 2131296269?true:super.onOptionsItemSelected(item);
+    }
+}

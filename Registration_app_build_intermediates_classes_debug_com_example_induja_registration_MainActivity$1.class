@@ -1,0 +1,43 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
+
+package com.example.induja.registration;
+
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.EditText;
+import android.widget.Toast;
+import com.example.induja.registration.MainActivity;
+import com.parse.ParseObject;
+
+class MainActivity$1 implements OnClickListener {
+    MainActivity$1(MainActivity this$0, EditText var2, EditText var3, EditText var4, EditText var5, EditText var6, EditText var7) {
+        this.this$0 = this$0;
+        this.val$name = var2;
+        this.val$cname = var3;
+        this.val$bname = var4;
+        this.val$email = var5;
+        this.val$ename = var6;
+        this.val$num = var7;
+    }
+
+    public void onClick(View view) {
+        String name1 = this.val$name.getEditableText().toString();
+        String name2 = this.val$cname.getEditableText().toString();
+        String name3 = this.val$bname.getEditableText().toString();
+        String name4 = this.val$email.getEditableText().toString();
+        String name5 = this.val$ename.getEditableText().toString();
+        String name6 = this.val$num.getEditableText().toString();
+        ParseObject gameScore = new ParseObject("reg");
+        gameScore.put("name", name1);
+        gameScore.put("college", name2);
+        gameScore.put("branch", name3);
+        gameScore.put("email", name4);
+        gameScore.put("event_name", name5);
+        gameScore.put("phone", name6);
+        gameScore.saveInBackground();
+        Toast.makeText(this.this$0.getApplicationContext(), "REGISTERED", 0).show();
+    }
+}

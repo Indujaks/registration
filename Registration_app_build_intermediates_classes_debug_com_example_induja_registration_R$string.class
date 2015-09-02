@@ -1,0 +1,15 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
+
+package com.example.induja.registration;
+
+public final class R$string {
+    public static final int action_settings = 2131165184;
+    public static final int app_name = 2131165185;
+    public static final int hello_world = 2131165186;
+
+    public R$string() {
+    }
+}

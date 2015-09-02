@@ -1,0 +1,13 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
+
+package com.example.induja.registration;
+
+public final class R$mipmap {
+    public static final int ic_launcher = 2130903040;
+
+    public R$mipmap() {
+    }
+}

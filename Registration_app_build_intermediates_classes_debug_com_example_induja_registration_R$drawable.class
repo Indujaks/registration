@@ -1,0 +1,13 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
+
+package com.example.induja.registration;
+
+public final class R$drawable {
+    public static final int bg = 2130837504;
+
+    public R$drawable() {
+    }
+}
